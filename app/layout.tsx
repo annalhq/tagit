@@ -8,8 +8,8 @@ import { Toaster } from '@/components/ui/toaster';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AI Question Tagger',
-  description: 'AI-powered question tagging platform',
+  title: 'tagit',
+  description: 'Ask questions like a pro',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
           <div className="min-h-screen bg-background">
             <header className="border-b">
               <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-                <h1 className="text-xl font-bold">AI Question Tagger</h1>
+                <h1 className="text-xl font-bold">tagit</h1>
                 <ThemeToggle />
               </div>
             </header>
