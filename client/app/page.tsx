@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="min-h-screen py-12 px-4 sm:px-6 relative isolate">
       <div
-        className="absolute inset-x-0 top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+        className="absolute inset-x-0 top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80 pointer-events-none"
         aria-hidden="true"
       >
         <div
@@ -35,7 +35,7 @@ export default function Home() {
             <div className="bg-card rounded-lg p-6 sm:p-8">
               {/* <QuestionForm /> */}
               <TagSuggester
-                apiEndpoint="http://127.0.0.1:5000/api/getRecommendedTags"
+                apiEndpoint="http://127.0.0.1:5000/api/getTag"
                 debounceDelay={600}
                 minInputLength={15}
               />

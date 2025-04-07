@@ -25,7 +25,7 @@ interface TagSuggesterProps {
 }
 
 const TagSuggester: React.FC<TagSuggesterProps> = ({
-  apiEndpoint = "http://127.0.0.1:5000/api/getRecommendedTags",
+  apiEndpoint = "http://127.0.0.1:5000/api/getTag",
   debounceDelay = 600,
   minInputLength = 15,
 }) => {
