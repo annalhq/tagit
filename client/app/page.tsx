@@ -1,4 +1,6 @@
-import { QuestionForm } from "@/components/question-form";
+"use client"
+
+import TagSuggester from "@/components/tag-suggester";
 
 export default function Home() {
   return (
@@ -31,14 +33,17 @@ export default function Home() {
 
           <div className="glass-effect subtle-shadow rounded-xl p-1">
             <div className="bg-card rounded-lg p-6 sm:p-8">
-              <QuestionForm />
+              {/* <QuestionForm /> */}
+              <TagSuggester
+                apiEndpoint="http://127.0.0.1:5000/api/getRecommendedTags"
+                debounceDelay={600}
+                minInputLength={15}
+              />
             </div>
           </div>
 
           <footer className="text-center text-sm text-muted-foreground mt-12">
-            <p>
-              Project by Annalhq and Aryan
-            </p>
+            <p>Project by Annalhq and Aryan</p>
           </footer>
         </div>
       </div>
