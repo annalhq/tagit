@@ -4,6 +4,7 @@ autopep8
 click
 Flask
 Flask-Cors
+gunicorn
 isort
 itsdangerous
 Jinja2
